@@ -1,0 +1,18 @@
+.header {
+    padding: 0 $gap-md;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+.padding {
+    width: 250px;
+    svg {
+        flex: 0 0 auto;
+    }
+}

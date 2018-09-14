@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    overflow-y: auto;
+}
+
+.mainDashboard {
+    padding-bottom: $nav-height;
+}
+
+:export {
+    time: $time;
+}
+
+.routeEnter {
+    transform: translateX(-100%)
+}
+
+.routeEnterActive {
+    transform: translateX(0);
+    transition: transform $time ease-out;
+}
+
+.routeExit {
+    transform: translateX(0);
+}
+
+.routeExitActive {
+    transform: translateX(100%);
+    transition: transform $time ease-out;
+}

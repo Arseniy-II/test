@@ -1,0 +1,29 @@
+.page {
+    @include page();
+}
+.pageBottom {
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    @include list-gradient(to bottom);
+    padding-top: 10px;
+    overflow-y: auto;
+}
+.generalInfo {
+    flex: 0 0 auto;
+    align-items: center;
+    display: flex;
+
+}
+.generalBox {
+    flex: 1 1 auto;
+}
+.total {
+    margin-left: $gap-sm;
+    padding: 8px $gap-sm;
+    border-radius: 15px;
+    background-color: $color-middle-back;
+    color: $color-top;
+}

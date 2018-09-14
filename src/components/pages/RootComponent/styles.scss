@@ -1,0 +1,13 @@
+.content {
+    @include page();
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    padding-top: $header-offset;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    @include page();
+    flex: 0 0 auto;
+}

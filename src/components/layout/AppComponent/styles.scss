@@ -1,0 +1,16 @@
+body {
+    background-color: $color-back;
+    overflow: hidden;
+}
+
+:global {
+    #app {
+        height: 100vh;
+        box-sizing: border-box;
+        display: grid;
+        white-space: pre-wrap;
+        grid-template-columns: auto;
+        grid-template-rows: $header-height auto 0;
+        grid-template-areas: "header" "main" "nav";
+    }
+}
